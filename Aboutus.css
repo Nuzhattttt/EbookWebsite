@@ -1,0 +1,17 @@
+
+.card
+{
+
+    padding: 23px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 120px auto auto auto;
+    background:-webkit-linear-gradient(right, #96b6d1, #cbbdc4, #938296, #7c8e98);
+    color: white;
+    font-weight: 700;
+    font-size: large;
+    height: 50%;
+
+    
+
+}
