@@ -10,8 +10,8 @@
 	border-radius: 2px;
 	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
 	overflow: hidden;
-	background: linear-gradient(to top right, rgb(124, 68, 86) 0%, rgb(179, 158, 169) 100%);
-	color: #333;
+	background: linear-gradient(to top right,rgb(129, 3, 3) 0%, rgb(179, 158, 169) 100%);
+	color: rgb(162, 146, 146);
 	font-family: "Open Sans", Helvetica, sans-serif;
 }
 
@@ -69,7 +69,7 @@
 	display: block;
 	width: 140px;
 	height: 40px;
-	background: rgb(133, 85, 120);
+	background: rgb(129, 3, 3)
 	color: #fff;
 	border-radius: 3px;
 	border: 0;
@@ -79,6 +79,8 @@
 }
 
 .btn:hover {
-	background: rgb(169, 112, 148);
+	background: rgb(129, 3, 3);
+    color: white;
+    text-decoration: none;
 }
 

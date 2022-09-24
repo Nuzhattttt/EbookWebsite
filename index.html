@@ -1,23 +1,314 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <nav>
-      <div class="logo">EBook</div>
-      <input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-        <li> <a href="logsign.html">Publish</a> </li>
-       <li> <a href="Aboutus.html">About Us</a></li>
-      </ul>
-    </nav>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
-  </body>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i>Ebook Archive </a>
+
+        <nav class="navbar">
+            <a href="#Home">Home</a>
+            <a href="#Featured">Featured</a>
+            <a href="#Categories">Categories</a>
+            <a href="logsign.html">Publish</a>
+            <a href="#Review">Review</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="img1.png" alt="">
+            <div class="content">
+                <h3>The Alachemist</h3>
+                <span class="price">BDT 60/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="img2.png" alt="">
+            <div class="content">
+                <h3>Inferno</h3>
+                <span class="price">BDT 50/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="img3.png" alt="">
+            <div class="content">
+                <h3>Homo Deus</h3>
+                <span class="price">BDT 65/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> total :BDT 175/- </div>
+        <a href="#" class="btn">checkout</a>
+
+       </div>
+       <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="email" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p>forgot your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+</header>
+
+<section class="home" id="home"></section>
+
+<div class="content"></div>
+       
+</section>
+
+<section class="Featured" id="Featured">
+
+    <h1 class="heading"> <span>Featured</span>books</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="book1.png" alt="">
+            <h3>Homo Sapiens</h3>
+            <p>Author: Yuval Noah Harari</p>
+            <a href="#" class="btn">Download Ebook</a>
+            <a href="#" class="btn">Download Audiobook</a>
+        </div>
+
+        <div class="box">
+            <img src="book2.png" alt="">
+            <h3>Rich Dad Poor Dad</h3>
+            <p>Author:Robert T.Kiyosaki</p>
+            <a href="#" class="btn">Download Ebook</a>
+            <a href="#" class="btn">Download Audiobook</a>
+          
+        </div>
+
+        <div class="box">
+            <img src="book3.png" alt="">
+            <h3>The Kite Runner</h3>
+            <p>Author:Khaled Hosseini</p>
+            <a href="#" class="btn">Download Ebook</a>
+            <a href="#" class="btn">Download Audiobook</a>
+          
+        </div>
+
+        <div class="box">
+            <img src="book4.png" alt="">
+            <h3>Pride & Prejudice</h3>
+            <p>Author: Jane Austen</p>
+            <a href="#" class="btn">Download Ebook</a>
+            <a href="#" class="btn">Download Audiobook</a>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="ratings" id="ratings">
+
+    <h1 class="heading"> <span>Ratings</span> </h1>
+
+    <div class="swiper ratings-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="new1.png" alt="">
+                <h3>Wings Of Fire</h3>
+                <p>Author:APJ Abdul Kalam</p>
+                <div class="price">BDT 50/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="new2.png" alt="">
+                <h3>The Last Song</h3>
+                <p>Author:Nicholas Sparks</p>
+                <div class="price">BDT 60/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="new3.png" alt="">
+                <h3>Harry Potter</h3>
+                <p>Author:J.K Rowling</p>
+                <div class="price">BDT 85/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="new4.png" alt="">
+                <h3>The Daughters of Eve</h3>
+                <p>Author:Elif Shafak</p>
+                <div class="price">BDT 65/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="swiper ratings-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="new5.png" alt="">
+                <h3>The God Of Small Things</h3>
+                <p>Author:Arundhati Roy</p>
+                <div class="price">BDT 75/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="new6.png" alt="">
+                <h3>Reminders Of Him</h3>
+                <p>Author:Collen Hoover</p>
+                <div class="price">BDT 70/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="new7.png" alt="">
+                <h3>Da Vinci Code</h3>
+                <p>Author:Dan Brown</p>
+                <div class="price">BDT 85/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="new8.png" alt="">
+                <h3>The Godfather</h3>
+                <p>Author:Mario Puzo</p>
+                <div class="price">BDT 80/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3><i class="fas fa-book">Ebook Archive</i> </h3>
+                <p>This is a collection of ebooks and audiobooks </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +8801735448895</a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> ebookarchive@gmail.com </a>
+            
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Featured </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Categories</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Publish </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Review </a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Contact </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- custom js file link  -->
+<script src="script.js"></script>
+</body>
 </html>
