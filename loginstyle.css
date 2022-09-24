@@ -122,7 +122,7 @@ input[type="radio"]{
 }
 .form-inner form .field input:focus{
   border-color: #fc83bb;
-  /* box-shadow: inset 0 0 3px #fb6aae; */
+
 }
 .form-inner form .field input::placeholder{
   color: #999;
@@ -148,11 +148,12 @@ form .field input:focus::placeholder{
   text-decoration: underline;
 }
 form .btn{
-  height: 50px;
+  height: 100%;
   width: 100%;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+color:#7c8e98;
 }
 form .btn .btn-layer{
   height: 100%;
@@ -161,12 +162,12 @@ form .btn .btn-layer{
   left: -100%;
   background: -webkit-linear-gradient(right, #96b6d1, #6d495a, #938296, #7c8e98);
   border-radius: 5px;
-  transition: all 0.4s ease;;
+  transition: all 0.4s ease;
 }
 form .btn:hover .btn-layer{
   left: 0;
 }
-form .btn input[type="submit"]{
+.loginbtn{
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -179,4 +180,8 @@ form .btn input[type="submit"]{
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+}
+.loginbtn a{
+text-decoration: none;
+color: white;
 }
