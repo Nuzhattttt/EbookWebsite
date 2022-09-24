@@ -92,4 +92,4 @@ input[type="checkbox"]{
   #click:checked ~ ul li a{
     margin-left: 0px;
   }
-
+}
